@@ -4,7 +4,7 @@ The objective of this project is to build an API, thinking about a task manageme
 * [Original Project](https://github.com/matheussilva123/api-ticketopen)
 
 ### Diagram of Relational Objects
-![](./src/utils/images/h2-embedded.png)
+![](./src/utils/images/sga.png)
 
 ### Technology
 * [Typescript](https://www.typescriptlang.org/)
@@ -21,7 +21,6 @@ Run yarn dev:server for Developer Server
 ```
 http://localhost:3333
 ```
-![](./src/utils/images/h2-embedded.png)
 
 ### About more project
 
