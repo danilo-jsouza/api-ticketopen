@@ -4,7 +4,7 @@ The objective of this project is to build an API, thinking about a task manageme
 * [Original Project](https://github.com/matheussilva123/api-ticketopen)
 
 ### Diagram of Relational Objects
-![](./utils/images/sga.png)
+![](./src/utils/images/h2-embedded.png)
 
 ### Technology
 * [Typescript](https://www.typescriptlang.org/)
@@ -17,13 +17,11 @@ By default, .env is all necessary configs for run this project
 
 ```
 Run yarn dev:server for Developer Server
-Run yarn build for transpile code to Javascript
-run yarn start for start the project
-
+```
 ```
 http://localhost:3333
 ```
-![](./utils/images/h2-embedded.png)
+![](./src/utils/images/h2-embedded.png)
 
 ### About more project
 
