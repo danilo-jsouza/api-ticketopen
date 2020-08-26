@@ -9,6 +9,11 @@ export default class DepartmentsRepository implements IDepartmentsRepository {
     this.ormRepository = getRepository(Department);
   }
 
+  public async findAll(): Promise<Department[] | undefined> {
+    const departments = await this.ormRepository.find();
+    return departments;
+  }
+
   public async findById(id: string): Promise<Department | undefined> {
     const department = await this.ormRepository.findOne(id);
 

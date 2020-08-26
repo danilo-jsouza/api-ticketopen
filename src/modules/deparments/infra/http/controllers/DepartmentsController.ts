@@ -4,6 +4,7 @@ import CreateDepartmentsService from '@modules/deparments/services/CreateDepartm
 import FindByIdDepartmentsService from '@modules/deparments/services/FindByIdDepartmentsService';
 import DeleteDepartmentsService from '@modules/deparments/services/DeleteDepartmentsService';
 import UpdateDepartmentsService from '@modules/deparments/services/UpdateDepartmentsService';
+import FindAllDepartmentsService from '@modules/deparments/services/FindAllDepartmentsService';
 
 export default class DepartmentsController {
   public async create(request: Request, response: Response): Promise<Response> {
@@ -24,6 +25,13 @@ export default class DepartmentsController {
     const department = await findByIdDepartments.execute(id);
 
     return response.json(department);
+  }
+
+  public async all(request: Request, response: Response): Promise<Response> {
+    const findAllDepartments = container.resolve(FindAllDepartmentsService);
+    const departments = await findAllDepartments.execute();
+
+    return response.json(departments);
   }
 
   public async delete(request: Request, response: Response): Promise<Response> {
