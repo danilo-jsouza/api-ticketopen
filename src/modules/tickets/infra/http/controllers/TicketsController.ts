@@ -1,10 +1,10 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
-import CreateTicketsService from '@modules/ticket/services/CreateTicketsService';
-import FindAllTicketsService from '@modules/ticket/services/FindAllTicketsService';
-import FindByIdTicketsService from '@modules/ticket/services/FindByIdTicketsService';
-import AdminUpdateTicketsService from '@modules/ticket/services/AdminUpdateTicketsService';
-import UserUpdateTicketsService from '@modules/ticket/services/UserUpdateTicketsService';
+import CreateTicketsService from '@modules/tickets/services/CreateTicketsService';
+import FindAllTicketsService from '@modules/tickets/services/FindAllTicketsService';
+import FindByIdTicketsService from '@modules/tickets/services/FindByIdTicketsService';
+import AdminUpdateTicketsService from '@modules/tickets/services/AdminUpdateTicketsService';
+import UserUpdateTicketsService from '@modules/tickets/services/UserUpdateTicketsService';
 
 export default class TicketsController {
   public async create(request: Request, response: Response): Promise<Response> {

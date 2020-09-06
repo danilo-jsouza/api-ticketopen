@@ -3,7 +3,7 @@ import departmentsRouter from '@modules/deparments/infra/http/routes/departments
 import categoriesRouter from '@modules/categories/infra/http/routes/categories.routes';
 import personsRouter from '@modules/persons/infra/http/routes/persons.routes';
 import sessionsRouter from '@modules/persons/infra/http/routes/sessions.routes';
-import ticketsRouter from '@modules/ticket/infra/http/routes/tickets.routes';
+import ticketsRouter from '@modules/tickets/infra/http/routes/tickets.routes';
 
 const routes = Router();
 

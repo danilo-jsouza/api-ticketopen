@@ -1,6 +1,6 @@
 import { Repository, getRepository } from 'typeorm';
-import ITicketsRepository from '@modules/ticket/repositories/ITicketsRepository';
-import ICreateTicketsDTO from '@modules/ticket/dtos/ICreateTicketsDTO';
+import ITicketsRepository from '@modules/tickets/repositories/ITicketsRepository';
+import ICreateTicketsDTO from '@modules/tickets/dtos/ICreateTicketsDTO';
 import Ticket from '../entities/Ticket';
 
 export default class TicketsRepository implements ITicketsRepository {

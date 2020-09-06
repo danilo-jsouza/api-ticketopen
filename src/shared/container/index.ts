@@ -5,8 +5,8 @@ import ICategoriesRepository from '@modules/categories/repositories/ICategoriesR
 import CategoriesRepository from '@modules/categories/infra/typeorm/repositories/CategoriesRepository';
 import IPersonsRepository from '@modules/persons/repositories/IPersonsRepository';
 import PersonsRepository from '@modules/persons/infra/typeorm/repositories/PersonsRepository';
-import ITicketsRepository from '@modules/ticket/repositories/ITicketsRepository';
-import TicketsRepository from '@modules/ticket/infra/typeorm/repositories/TicketsRepository';
+import ITicketsRepository from '@modules/tickets/repositories/ITicketsRepository';
+import TicketsRepository from '@modules/tickets/infra/typeorm/repositories/TicketsRepository';
 
 container.registerSingleton<IDepartmentsRepository>(
   'DepartmentsRepository',
