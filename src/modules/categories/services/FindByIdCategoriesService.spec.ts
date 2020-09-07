@@ -25,7 +25,7 @@ describe('FindByIdCategories', () => {
     expect(categoryById.name).toBe('Category-Test');
   });
 
-  it('should not be able to show the specific category by id', async () => {
+  it('should not be able to show the specific category from not-existing category', async () => {
     await expect(
       findByIdCategories.execute('no-existing-category-id'),
     ).rejects.toBeInstanceOf(AppError);

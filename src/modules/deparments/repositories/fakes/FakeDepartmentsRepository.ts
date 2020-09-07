@@ -21,7 +21,7 @@ export default class FakeDepartmentsRepository
   public async delete(id: string): Promise<void> {
     const departmentIndex = this.departments.findIndex(d => d.id === id);
 
-    this.departments.splice(departmentIndex);
+    this.departments.splice(departmentIndex, 1);
   }
 
   public async create(name: string): Promise<Department> {
