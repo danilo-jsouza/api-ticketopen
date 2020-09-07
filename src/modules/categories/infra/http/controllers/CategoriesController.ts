@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 import CreateCategoriesService from '@modules/categories/services/CreateCategoriesService';
-import FindByIdCategoriesService from '@modules/categories/services/FindByIdCategories';
+import FindByIdCategoriesService from '@modules/categories/services/FindByIdCategoriesService';
 import UpdateteCategoriesService from '@modules/categories/services/UpdateCategoriesService';
 
 export default class CategoriesController {
