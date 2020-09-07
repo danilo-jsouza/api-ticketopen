@@ -7,6 +7,7 @@ import IPersonsRepository from '@modules/persons/repositories/IPersonsRepository
 import PersonsRepository from '@modules/persons/infra/typeorm/repositories/PersonsRepository';
 import ITicketsRepository from '@modules/tickets/repositories/ITicketsRepository';
 import TicketsRepository from '@modules/tickets/infra/typeorm/repositories/TicketsRepository';
+import '@modules/persons/providers';
 
 container.registerSingleton<IDepartmentsRepository>(
   'DepartmentsRepository',

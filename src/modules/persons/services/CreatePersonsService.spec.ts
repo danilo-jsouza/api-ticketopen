@@ -2,14 +2,20 @@ import { uuid } from 'uuidv4';
 import AppError from '@shared/errors/AppError';
 import FakePersonsRepository from '../repositories/fakes/FakePersonsRepository';
 import CreatePersonsService from './CreatePersonsService';
+import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
 
 let fakePersonsRepository: FakePersonsRepository;
+let fakeHashProvider: FakeHashProvider;
 let createPerson: CreatePersonsService;
 
 describe('CreatePerson', () => {
   beforeEach(() => {
     fakePersonsRepository = new FakePersonsRepository();
-    createPerson = new CreatePersonsService(fakePersonsRepository);
+    fakeHashProvider = new FakeHashProvider();
+    createPerson = new CreatePersonsService(
+      fakePersonsRepository,
+      fakeHashProvider,
+    );
   });
 
   it('should be able to create a new person', async () => {
